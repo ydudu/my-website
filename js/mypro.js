@@ -162,4 +162,4 @@ $(function(){
             $('.blogprompt').fadeOut();
         },100);
     });
-})
+});
