@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>未命名</title>	 
+	 <style type="text/css">
+	 *{margin:0px; padding:0px;}
+	 canvas{background:black; display:block;}
+	 </style>
+</head>
+<body>
+<script>
+	var canvas=document.createElement('canvas');
+	var body=document.documentElement||document.body;
+	body.appendChild(canvas);
+	var c=canvas.getContext('2d');
+	canvas.width=window.innerWidth;
+	canvas.height=window.innerHeight;
+	var lastTime=0;
+	
+	
+	var bgReady=false;  //初始化加载状态
+	var bgImg=new Image(); //创建图片背景
+	bgImg.src="images/11.jpg";	//图片路径
+	bgImg.onload=function() //判断加载完成 
+	{
+		bgReady=true;
+	}
+	
+	
+	var ghostReady=false; //初始化加载状态
+	var ghostImg=new Image(); //创建幽灵图片
+	ghostImg.src="images/2.png"; //图片路径
+	ghostImg.onload=function() //判断加载完成 
+	{
+		ghostReady=true;
+	}
+	
+		
+	var monsterReady=false; //初始化加载状态
+	var monsterImg=new Image(); //创建guaiwu图片
+	monsterImg.src="images/1.png"; //图片路径
+	monsterImg.onload=function() //判断加载完成 
+	{
+		monsterReady=true;
+	}
+	
+	
+	//创建幽灵对象
+	var ghost={
+		x:canvas.width/2,
+		y:canvas.height/2,
+		speed:300,
+		sX:0,  //截取位置
+		sY:0,
+	}
+	//创建幽怪兽对象
+	var monster={
+		x:0,
+		y:0,
+		speed:100,
+		direction:'down'
+	
+	}
+	
+	
+	//存储用户按下了哪些键,不知道用户按下哪些键可以先存储
+	var keyDown={}; 
+	//监听键盘按下事件
+	addEventListener('keydown',function(e){
+		
+		keyDown[e.keyCode]=true;
+		console.log(keyDown);
+	})
+	addEventListener('keyup',function(e){
+		delete keyDown[e.keyCode];
+		console.log(keyDown);
+	})
+	
+	function ghostMove(delta)
+	{
+		if(38 in keyDown)
+		{
+			ghost.y-=ghost.speed*delta;
+			ghost.sX=130;
+			ghost.sY=65;
+		}
+		if(40 in keyDown)
+		{
+			ghost.y+=ghost.speed*delta;
+			ghost.sX=0;
+			ghost.sY=65;
+		}
+		if(37 in keyDown)
+		{
+			ghost.x-=ghost.speed*delta;
+			ghost.sX=65;
+			ghost.sY=65;
+		}
+		if(39 in keyDown)
+		{
+			ghost.x+=ghost.speed*delta;
+			ghost.sX=65;
+			ghost.sY=130;
+		}
+		
+		if(Math.abs(ghost.x-monster.x)<=32&&Math.abs(ghost.y-monster.y)<=32)
+		{
+			kill()
+		}
+	}
+	
+	function kill()
+	{
+		monster.x=Math.random()*(canvas.width-64);
+		monster.y=Math.random()*(canvas.height-64);
+		//通过数组下标随机来获取随机方向
+		monster.direction=['up', 'down', 'left', 'right'][Math.floor(Math.random()*4)]
+	}
+	
+	function monsterMove(delta)
+	{
+		switch(monster.direction){
+			case 'up':
+				monster.y-=monster.speed*0.01;
+				break;
+			case 'down':
+				monster.y+=monster.speed*0.01;
+				break;
+			case 'left':
+				monster.x-=monster.speed*0.01;
+				break;
+			case 'right':
+				monster.x+=monster.speed*0.01;
+				break;
+				
+		}	
+	}
+	
+	//添加绘制图片函数
+	function dgImg()
+	{		
+		if(bgReady)
+		{
+	       c.drawImage(bgImg,0,0,canvas.width,canvas.height);
+		}	
+		if(ghostReady)
+		{
+		   c.drawImage(ghostImg,ghost.sX,ghost.sY,65,65,ghost.x,ghost.y,65,65)
+		}
+		if(monsterImg)
+		{
+			c.drawImage(monsterImg,0,0,65,65,monster.x,monster.y,65,65)
+		}
+	}
+	
+	
+	//帧重复绘制场景
+	function move()
+	{	
+		c.fillRect(0, 0, canvas.width, canvas.height);
+		dgImg();
+		
+		var delta=Date.now()-lastTime;//算出时间间隔
+		ghostMove(delta/1000); //动画稳定帧
+		monsterMove(delta);
+		requestAnimationFrame(move);
+		lastTime=Date.now();//把当前时间赋给上一次时间
+	}
+		requestAnimationFrame(move);
+</script>
+</body>
+</html>	

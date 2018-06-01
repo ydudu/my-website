@@ -1,0 +1,87 @@
+html{font:12px '宋体';}
+*{margin:0; padding:0;}
+.top{
+	background-color:#F7F7F7; height:26px; border-bottom:1px solid #D8D8D8;
+}
+.top_page{width:970px; height:26px; margin:0 auto; background:#ccc;}
+.top_page1{float:left; line-height:26px;}
+.top_page2{float:right;}
+.top_page2 ul li { float:right; float:left; padding-right:10px; line-height:26px; list-style:none;}
+a{text-decoration:none; color:#000; list-style:none;}
+.top_page2 ul li s{width:13px; height:7px; background:url(../images/ico_03.png); display:inline-block; vertical-align:middle;}
+
+.logo{width:970px; height:98px;  margin:0 auto;}
+.logo_1{width:200px; height:55px; background: url(../images/乐跑_01.png); float:left;
+             margin: 24px 0 19px 9px; text-indent: -1000em;}
+.logo_2{width: 530px; height: 42px;  float:right; padding:5px 2px 2px 2px; margin-top:29px; } 
+.srk{width:400px; height: 30px;  float: left; color:#ccc;  border:2px solid #c9c9c8;}
+.btn{width:99px; height:30px; float: left;}
+.logo_3{margin:5px 5px 2px 5px; }
+
+
+.sy{width:970px;height:25px; margin:0 auto;  border-bottom:2px solid #0266a3;}
+.sy li{float:left; padding:0 15px 0 15px; font-size:14px; font-weight:bold; line-height:25px; list-style:none;}
+.sy li:hover{background:#0266a3;}
+.sy li:hover a{color: white;}
+
+.banner{width: 970px;height: 210px;margin: 0 auto;margin-top: 10px;}
+.banner_1{width: 200px;height: 210px;float: left; margin-right:10px;}
+#banner_2 {float:left;width: 520px;height: 210px; overflow:hidden;}
+#banner_2 img{width: 520px;height: 210px; float:left;}
+.banner_3{width: 230px;height: 210px;float: right;}
+.banner_1 h2{line-height: 30px; font-size: 14px; font-weight: bold; padding-left: 20px; background-color: #0266a3; color:white;}
+.banner li{list-style:none; padding-left:12px; margin-top:11px;}
+.banner_1 a{font-size:14px; font-weight: bold; }
+.banner_1 li:hover a{color:red;}
+
+.banner_top{height: 95px; background:#f7f7ff; margin-bottom:23px;}
+.banner_bottom{height: 92px; background:#f7f7cc;}
+.banner_top .p1{font-size:15px; padding:8px 0 0 12px; font-weight:bold;}
+.banner_top .p2{padding:22px 0 0 45px;}
+
+.banner_bottom .message{font-size:15px; color:#808080; font-weight:bold; padding:12px 0 0 12px;}
+.banner_bottom .ph{text-align:center; color:rgb(200,0,200); font-size:20px; padding-top:12px;}
+.material{width:950px; height: 34px;background: #ecf1f7;margin: 0 auto;margin-top: 14px; line-height:34px; padding-left:20px; font-weight: bold;border-top:2px solid #c3d7e4;}
+
+.product{width:970px; height:345px;  margin:12px auto;}
+.product .product_1{width:729px; height: 345px;float: left; border:1px solid #aacfff;}
+.product .product_2{width:230px;height: 345px;float: right;}
+
+.block_1{width:350px; height:146px; margin:17px 0 0 12px; float:left;}
+.buy_1{width:99px; height:143px;  float:left;}
+.buy_2{width:250px; height:143px;  float:right;}
+.buy_1 .img{height:100px; border:1px solid #cacaca;}
+.buy_1 .img s{display: inline-block; background:url(../images/1.jpg); height:62px; width:90px; background-size:cover; margin:10px 0 0 3px;}
+
+.buy_1 .btn1{width:99px; height:26px; background:#0a84e3; color:white; margin-top:15px;}
+.buy_2 .pr_1{font-size:14px; padding:10px 0 0 10px;}
+.buy_2 .pr_2{color:#863e01; padding:13px 0 0 15px;}
+.buy_2 .money span{color:red;padding:23px 0 0 11px;font-size:20px;}
+.buy_2 .money s{text-decoration:line-through;}
+.buy_2 .buyed{font-size:15px;padding:35px 0 0 11px;}
+.line{width:728px; border:1px solid #aacfff;margin-top:180px;}
+
+.product_2 h2{height:28px; line-height:28px;padding-left:15px;}
+.product_2 ul{ padding-left:35px; padding-top:10px;}
+.product_2 ul li{line-height:23px;}
+.product_2 li:hover a{color:red;}
+
+.product_fx{width:970px; height:450px; margin:2px auto;}
+.product_fx1{width:729px; height:450px; float:left;  border:1px solid #cacaca;}
+.product_fx2{width:230px; height:450px; background:pink; float:right;}
+.tu1{float:left;}
+.tu1 s{width:210px; height:240px; background:url(../images/3.png) ; display: inline-block; margin:10px 0 0 12px;}
+.jiesao{padding:10px 0 0 22px; font-size:14px;}
+.jiesao1{padding:20px 0 0 55px; color:#484848 ;font-size:14px;}
+.jiesao2{padding:20px 0 0 55px; color:#484848 ;font-size:14px;}
+.tu1 h2{padding:10px 0 0 35px; color:red; line-height:50px;}
+
+.yqlink{width:970px; height:103px; margin:12px auto; border-top:2px solid #dddddd; color:#666666;border-bottom:1px solid #0a7ec3;}
+.yqlink1{margin:30px 0 0 0;}
+.yqlink2{margin-top: 14px; margin-left:61px;}
+
+.about{width:970px; height:91px; margin:0 auto;}
+.about p{text-align:auto; margin-top:14px; text-align:center;}
+
+
+
