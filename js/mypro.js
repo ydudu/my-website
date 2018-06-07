@@ -83,6 +83,8 @@ $(function(){
         $(this).css('background','#64645e');
     } )
 });
+
+//右部分波纹
 $(function(){
     var top1 = $("#section1").offset().top-30;
     var top2 = $("#section2").offset().top-30;
@@ -90,6 +92,8 @@ $(function(){
     var top4 = $("#section4").offset().top-30;
     var top5 = $("#section5").offset().top-30;
     var top6 = $("#section6").offset().top-30;
+    var index= $('.right-nav li').index();
+    $('.right-nav li').eq(index).addClass('sploosh').siblings().removeClass('sploosh');
     $(window).scroll(function() {
         var s = $(window).scrollTop();
         if(s>top1 && s< top2) {
@@ -162,4 +166,19 @@ $(function(){
             $('.blogprompt').fadeOut();
         },100);
     });
+});
+//浅变轮番
+$(function(){
+    var iLi = $('.cover1-bg li');
+    var i = iLi.index();
+    var timer = 0;
+    clearInterval(timer);
+    timer = setInterval(function(){
+        if(i >= 3){
+            i=0;
+        }else{
+            i++;
+        }
+        iLi.eq(i).fadeIn().siblings().fadeOut();
+    },5000)
 });

@@ -1,13 +1,9 @@
 window.onload=function()
 {
-	
 var timer=null;
 var banner=document.getElementById("banner_2");
 var img=banner.getElementsByTagName('img');
 var index=0;
-
-
-    
 	clearInterval(timer);
 	timer=setInterval(function(){
      
@@ -21,6 +17,5 @@ var index=0;
 		img[i].style.display="none";			
 		}
 		img[index].style.display="block";
-	},1000)
-
+	},2000)
 }

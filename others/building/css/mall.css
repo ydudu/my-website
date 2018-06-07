@@ -62,13 +62,14 @@ a{text-decoration:none; color:#000; list-style:none;}
 .line{width:728px; border:1px solid #aacfff;margin-top:180px;}
 
 .product_2 h2{height:28px; line-height:28px;padding-left:15px;}
-.product_2 ul{ padding-left:35px; padding-top:10px;}
+.product_2 ul{ padding-left:35px; padding-top:10px; list-style: none}
 .product_2 ul li{line-height:23px;}
 .product_2 li:hover a{color:red;}
 
 .product_fx{width:970px; height:450px; margin:2px auto;}
 .product_fx1{width:729px; height:450px; float:left;  border:1px solid #cacaca;}
-.product_fx2{width:230px; height:450px; background:pink; float:right;}
+.product_fx2{width:230px; height:450px; float:right; text-align: center}
+.product_fx2 ul li{list-style: none; padding-top: 20px;}
 .tu1{float:left;}
 .tu1 s{width:210px; height:240px; background:url(../images/3.png) ; display: inline-block; margin:10px 0 0 12px;}
 .jiesao{padding:10px 0 0 22px; font-size:14px;}
