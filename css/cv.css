@@ -714,7 +714,7 @@ body {
         display: none;
     }
 
-    .music-img {
+    #music{
         margin-top: 0;
         top: 5px;
         left: 10px;
