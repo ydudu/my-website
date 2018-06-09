@@ -18,7 +18,7 @@ body {
     overflow: hidden;
 }
 
-.music-img {
+#music{
     background: url(../images/music-bg.jpg) no-repeat;
     width: 40px;
     height: 40px;
@@ -41,7 +41,7 @@ body {
     }
 }
 
-.music-img:hover {
+#music:hover {
     filter: Alpha(Opacity=80);
     opacity: 0.8;
     cursor: pointer;
@@ -396,7 +396,7 @@ body {
 .cover4 {
     width: 100%;
     min-height: 700px;
-    background: rgba(121, 149, 179, 0.6);
+    background: rgba(111, 103, 179, 0.6);
 }
 
 .cover4 > h2 {
@@ -458,7 +458,13 @@ body {
 }
 
 .cover4 .container a .move-bg h4 {
-    font-size: 12pt;
+    font-size: 16px;;
+}
+.cover4 .container a .move-bg p{
+    padding: 0 1em;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
 }
 
 /*cover5 */
@@ -475,7 +481,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: url(../images/imgbox4.jpg) no-repeat;
+    background: url(../images/timg.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
@@ -837,6 +843,9 @@ body {
         line-height: 35px;
         font-size: 16px;
         margin-top: 10px;
+    }
+    .cover4 .container a .move-bg p{
+        font-size: 12px;
     }
 
     .cover5 .block .left-box ul li {

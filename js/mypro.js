@@ -1,8 +1,8 @@
 //音乐关闭
 $(function(){
-    $(".music-img").bind("click", function() {
-        $(this).toggleClass("pause");
-        var audio = $(".music-img audio")[0];
+    $("#music").bind("click", function() {
+        $(this).toggleClass("music-img");
+        var audio = $("#music audio")[0];
         if (audio.paused) {
             audio.play(); //audio.play();// 播放
             $(this).css('animation','musicrun 3s infinite linear')
