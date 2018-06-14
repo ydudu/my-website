@@ -18,7 +18,7 @@ body {
     overflow: hidden;
 }
 
-#music{
+#music {
     background: url(../images/music-bg.jpg) no-repeat;
     width: 40px;
     height: 40px;
@@ -168,6 +168,7 @@ body {
 .cover1 .cover1-bg ul .bg4 {
     background-image: url(../images/timg5.jpg);
 }
+
 .cover1 .intro {
     position: absolute;
     width: 100%;
@@ -226,23 +227,27 @@ body {
 .return-top {
     width: 40px;
     height: 40px;
-    background: rgb(100, 100, 100);
     z-index: 10000;
     position: fixed;
     bottom: 10%;
     right: 8px;
     display: none;
+    border: 1px solid #fff;
     border-radius: 10px;
 }
 
 .return-top:hover {
     cursor: pointer;
-    background: rgba(159, 184, 223, 0.7)
+    border: 1px solid #ff2330;
 }
 
 .return-top span {
     color: #FFFFFF;
     font-size: 38px;
+}
+
+.return-top:hover span {
+    color: #ff2330;
 }
 
 /*cover2*/
@@ -460,7 +465,8 @@ body {
 .cover4 .container a .move-bg h4 {
     font-size: 16px;;
 }
-.cover4 .container a .move-bg p{
+
+.cover4 .container a .move-bg p {
     padding: 0 1em;
     font-size: 14px;
     line-height: 18px;
@@ -700,7 +706,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 /*------------------------------------------------------------*/
 @media only screen and (max-width: 1224px) {
     .cover1 .intro h3 {
@@ -714,7 +719,7 @@ body {
         display: none;
     }
 
-    #music{
+    #music {
         margin-top: 0;
         top: 5px;
         left: 10px;
@@ -844,7 +849,8 @@ body {
         font-size: 16px;
         margin-top: 10px;
     }
-    .cover4 .container a .move-bg p{
+
+    .cover4 .container a .move-bg p {
         font-size: 12px;
     }
 
