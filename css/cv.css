@@ -3,15 +3,47 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 h2 {
     font-size: 30px;
 }
-
 body {
     font-size: 14px;
 }
-
+.github-link {
+    width: 150px;
+    height: 50px;
+    background: rgba(111, 110, 110, 0.5);
+    position: fixed;
+    z-index: 1040;
+    left: 20px;
+    top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.github-link a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.github-link a img{
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+    margin-left: 4%;
+}
+.github-link a span{
+    height: 100%;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 10px;
+    color: #fff;
+}
+.github-link a span:hover{
+    color: yellow;
+}
 .content {
     text-align: center;
     position: relative;
@@ -178,27 +210,60 @@ body {
     transition: all 1s;
 }
 
-.cover1 .intro h3 {
-    letter-spacing: 4px;
+.cover1 .intro .two-text {
+    width: 740px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all .5s;
+}
+
+.cover1:hover .two-text {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.cover1 .intro .two-text h3 {
+    letter-spacing: 2px;
     color: snow;
-    font-family: "Microsoft JhengHei";
+    font-family: Comic Sans MS;;
     font-size: 60px;
     text-align: center;
     margin: 0 auto;
     top: 500px;
+    cursor: default;
 }
 
-.cover1 .intro .intro_p {
-    font-size: 30px;
+.cover1 .intro .two-text .intro_p {
+    font-size: 25px;
+    color: snow;
+    font-family: Comic Sans MS;
+    margin: 10px 0 10px 0;
+    letter-spacing: 2px;
+    line-height: 30px;
+    cursor: default;
+}
+
+.cover1 .intro .two-text .name {
+    font-size: 20px;
     color: snow;
     margin: 10px 0 10px 0;
-    font-weight: 700;
     letter-spacing: 4px;
+    line-height: 30px;
+    cursor: default;
+}
+
+.cover1 .intro .two-text .email {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0 10px 0;
+    letter-spacing: 4px;
+    line-height: 30px;
 }
 
 .cover1 .intro span {
     display: inline-block;
-    width: 150px;
+    width: 160px;
     height: 50px;
     font-size: 20px;
     line-height: 46px;
@@ -208,22 +273,27 @@ body {
     cursor: pointer;
 }
 
+.cover1 .two-box {
+    margin: 30px;
+    display: none;
+}
+
 .cover1 .intro .about_me {
-    background: #525252;
+    background: rgba(97, 243, 173, 0.7);
+    border: 1px solid #fff;
     color: white;
 }
 
 .cover1 .intro .my_pro {
-    background: cornsilk;
-    border: 1px solid #000000;
+    background: rgba(108, 153, 204, 0.7);
+    border: 1px solid #31d5b3;
+    color: snow;
 }
-
 .img-circle {
     width: 200px;
     height: 200px;
     margin: 20px auto;
 }
-
 .return-top {
     width: 40px;
     height: 40px;
@@ -235,12 +305,10 @@ body {
     border: 1px solid #fff;
     border-radius: 10px;
 }
-
 .return-top:hover {
     cursor: pointer;
     border: 1px solid #ff2330;
 }
-
 .return-top span {
     color: #FFFFFF;
     font-size: 38px;
@@ -249,6 +317,30 @@ body {
 .return-top:hover span {
     color: #ff2330;
 }
+#comments {
+    position: fixed;
+    z-index: 1000;
+    left: 10px;
+    bottom: 10px;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#comments a {
+    color: #FFFFFF;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#comments a:hover {
+    background-color: #0fcc38;
+}
 
 /*cover2*/
 .cover2 {
@@ -256,20 +348,35 @@ body {
     width: 100%;
     height: 100vh;
     min-height: 700px;
-    background-color: rgba(142, 211, 244, 0.7);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.cover2-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/timg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
+    z-index: -1;
 }
 
 .navbar {
-    background-color: #64645e;
-    border-bottom: 1px solid #178ACC;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.6);
+    border: none
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a {
-    color: white;
+    color: #FFF;
+    transition: all .5s;
 }
 
 .navbar-default .navbar-nav .active a,
@@ -277,8 +384,9 @@ body {
 .navbar-default .navbar-nav .active a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #FFF;
-    background-color: #178ACC;
+    color: #fff;
+    background: #0fcc38;
+    animation: .5s linear;
 }
 
 .navbar-default .navbar-toggle {
@@ -286,7 +394,7 @@ body {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
+    background-color: #0fcc38;
 }
 
 .cover2 h2 {
@@ -295,14 +403,58 @@ body {
     text-align: center;
     line-height: 30px;
     letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.cover2 .about_div {
+    width: 700px;
+    height: 140px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.cover2 .about_div .left-line {
+    width: 70px;
+    height: 50px;
+    border-top: 2px solid #cc231f;
+    border-left: 2px solid #cc231f;
+    position: absolute;
+}
+
+.cover2 .about_div .right-line {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid #cc231f;
+    border-right: 2px solid #cc231f;
+}
+
+.cover2 .ul-intro {
+    display: inline-block;
 }
 
 .cover2 .ul-intro li {
     font-size: 20px;
     margin: 20px;
     list-style: none;
-    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+}
 
+.cover2 .ul-intro li span {
+    margin-right: 10px;
+}
+
+.cover2 .about_div p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 25px;
+    text-indent: 2.4rem;
+    line-height: 2rem;
 }
 
 /*cover3*/
@@ -311,7 +463,7 @@ body {
     width: 100%;
     height: 100vh;
     min-height: 700px;
-    background: rgba(60, 60, 60, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .cover3 .cover3-img {
@@ -323,6 +475,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 
 .cover3 h2 {
@@ -399,9 +556,25 @@ body {
 
 /*cover4*/
 .cover4 {
+    position: relative;
     width: 100%;
     min-height: 700px;
-    background: rgba(111, 103, 179, 0.6);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.cover4-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/timg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
+    z-index: -1;
 }
 
 .cover4 > h2 {
@@ -410,6 +583,7 @@ body {
     text-align: center;
     line-height: 30px;
     letter-spacing: 2px;
+    color: #fff;
 }
 
 .cover4 .container {
@@ -426,11 +600,9 @@ body {
 .cover4 .img-box {
     padding-bottom: 100%;
     height: 0;
-    width: 100%;
     overflow: hidden;
     text-align: center;
     transition: all 0.4s;
-    opacity: 0.8;
 }
 
 .cover4 .container > div:hover .img-box {
@@ -479,7 +651,7 @@ body {
     height: 100vh;
     min-height: 700px;
     position: relative;
-    background-color: rgba(86, 83, 100, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bg-cover5 {
@@ -598,7 +770,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #83c7d5;
+    background-color: rgba(17, 9, 34, 0.8);
 }
 
 .cover6 h2 {
@@ -607,10 +779,11 @@ body {
     text-align: center;
     line-height: 30px;
     letter-spacing: 2px;
+    color: #fff;
 }
 
 .cover6 .content-me {
-    margin: 200px auto;
+    margin: 100px auto 0 auto;
 }
 
 .cover6 .content-me a {
@@ -706,16 +879,97 @@ body {
     width: 100%;
     height: 100%;
 }
+
+/*立体*/
+.stage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    perspective: 800px;
+
+}
+
+.three-d-box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    transform-style: preserve-3d;
+    animation: moveba 5s linear infinite;
+}
+
+@keyframes moveba {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.three-d-box > li {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.stage .three-d-box > li:nth-child(1) {
+    background-color: #61f3ad;
+    transform: translateZ(-100px);
+}
+
+.stage .three-d-box > li:nth-child(2) {
+    background-color: greenyellow;
+    transform: translateZ(100px);
+}
+
+.stage .three-d-box > li:nth-child(3) {
+    background-color: #974cb3;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.stage .three-d-box > li:nth-child(4) {
+    background-color: #cc1718;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.stage .three-d-box > li:nth-child(5) {
+    background-color: #b38e4d;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.stage .three-d-box > li:nth-child(6) {
+    background-color: #5c32b3;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
 /*------------------------------------------------------------*/
 @media only screen and (max-width: 1224px) {
-    .cover1 .intro h3 {
+    .cover1 .intro .two-text h3 {
         font-size: 50px;
     }
-
 }
 
 @media only screen and (max-width: 770px) {
     .right-nav {
+        display: none;
+    }
+    .github-link{
+        display: none;
+    }
+    #comments {
         display: none;
     }
 
@@ -726,16 +980,28 @@ body {
     }
 
     .cover1 .intro {
-        top: 250px;
+        top: 200px;
     }
 
-    .cover1 .intro h3 {
+    .cover1 .intro .two-box {
+        display: block;
+    }
+
+    .cover1 .intro .two-text {
+        width: 100%;
+    }
+
+    .cover1 .intro .two-text h3 {
         font-size: 28px;
         margin-bottom: 20px;
     }
 
-    .cover1 .intro .intro_p {
+    .cover1 .intro .two-text .intro_p {
         font-size: 20px;
+    }
+
+    .cover1 .intro .two-text .name {
+        font-size: 16px;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -745,6 +1011,22 @@ body {
     .img-circle {
         width: 135px;
         height: 135px;
+    }
+
+    .cover2 .about_div {
+        width: 85%;
+        height: 220px;
+        margin: 0 auto;
+        padding-top: 20px;
+        position: relative;
+    }
+
+    .cover2 .ul-intro li {
+        font-size: 20px;
+        margin: 20px;
+        list-style: none;
+        color: #FFFFFF;
+        display: block;
     }
 
     .cover3 .cover-bottom {
@@ -789,9 +1071,9 @@ body {
 
     .cover3 .cover-bottom .technology {
         position: absolute;
+        padding: 0 20px 0 10px;
         width: 340px;
         top: 55%;
-        padding: 10px;
     }
 
     .cover4 .img-box {

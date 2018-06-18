@@ -36,6 +36,7 @@ $(function(){
             $("#navbar").removeClass("in");
             $("#navbar").attr("aria-expanded",false);
     });
+
 	//return-top
     $('.return-top').click(function(){
         $('html,body').animate({
@@ -98,16 +99,22 @@ $(function(){
         var s = $(window).scrollTop();
         if(s>top1 && s< top2) {
             $('.right-nav li').eq(0).addClass('sploosh').siblings().removeClass('sploosh');
+            $('.github-link').css({'left':'20px','top': '10px'});
         }else if(s>top2 && s<top3) {
             $('.right-nav li').eq(1).addClass('sploosh').siblings().removeClass('sploosh');
+            $('.github-link').css({'left':'150px','top': '1px'});
         }else if(s>top3 && s<top4) {
             $('.right-nav li').eq(2).addClass('sploosh').siblings().removeClass('sploosh');
+            $('.github-link').css({'left':'150px','top': '1px'});
         }else if(s>top4 && s<top5) {
             $('.right-nav li').eq(3).addClass('sploosh').siblings().removeClass('sploosh');
+            $('.github-link').css({'left':'150px','top': '1px'});
         }else if(s>top5 && s<top6) {
             $('.right-nav li').eq(4).addClass('sploosh').siblings().removeClass('sploosh');
+            $('.github-link').css({'left':'150px','top': '1px'});
         }else if(s>top6) {
             $('.right-nav li').eq(5).addClass('sploosh').siblings().removeClass('sploosh');
+            $('.github-link').css({'left':'150px','top': '1px'});
         }
         });
 });
@@ -168,17 +175,20 @@ $(function(){
     });
 });
 //浅变轮番
+var timer  = null;
 $(function(){
     var iLi = $('.cover1-bg li');
     var i = iLi.index();
-    var timer = 0;
     clearInterval(timer);
-    timer = setInterval(function(){
+    timer = setInterval(setTimer,5000);
+    function setTimer(){
         if(i >= 3){
             i=0;
         }else{
             i++;
         }
         iLi.eq(i).fadeIn().siblings().fadeOut();
-    },5000)
+
+    }
 });
+

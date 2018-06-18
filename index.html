@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/cv.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/loader.css">
     <!--baidu tongji-->
     <script>
         var _hmt = _hmt || [];
@@ -27,7 +28,29 @@
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
+<!--//loader动画进入-->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div class="load_title">正在加载Theshine站点<br><span>V1.0</span></div>
+</div>
+
 <div class="content">
+    <div class="github-link">
+        <a href="https://github.com/ydudu" target="_blank">
+            <img src="images/head.jpg" alt="">
+            <span class="icon-github">TheShine</span>
+        </a>
+    </div>
+    <div id="comments" class="animated bounce">
+        <a href="#SOHUCS" class="scrollTo">
+            <span>点</span>
+            <span>击</span>
+            <span>评</span>
+            <span>论</span>
+        </a>
+    </div>
     <div class="right-nav">
         <ul>
             <li><a class="scrollTo" href="#section1"></a></li>
@@ -40,7 +63,7 @@
         <span class="dashed"></span>
     </div>
     <div id="music" class="music-img">
-        <audio autoplay loop hidden="true">
+        <audio  loop hidden="true">
             <source src="media/silly.mp3" type="audio/mpeg">
             <source src="media/silly.ogg" type="audio/ogg">
             Your browser does not support the audio tag.
@@ -51,9 +74,13 @@
     </div>
     <div id="section1" class="cover1">
         <div class="intro wow fadeInUp" data-wow-duration="2s" >
-            <h3>Hello Everyone</h3>
-            <p class="intro_p">I'm TheShine</p>
-            <div>
+            <div class="two-text wow jello" data-wow-delay="2s">
+                <h3>Hello,I'm TheShine</h3>
+                <p class="intro_p">Nothing great was ever achieved without enthusiasm</p>
+                <p class="name">我叫杨光<br>一名前端开发工程师</p>
+                <p class="email">shine.yg@qq.com</p>
+            </div>
+            <div class="two-box">
                 <a href="#section2" class="scrollTo">
                     <span class="active about_me">关于我</span>
                 </a>
@@ -72,6 +99,7 @@
         </div>
     </div>
     <div id="section2" class="cover2">
+        <div class="cover2-bg"></div>
         <nav id="myScrollspy" class="navbar navbar-default " role="navigation">
             <div class="container">
                 <!--header section -->
@@ -84,7 +112,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand scrollTo" href="#section1">首页</a>
+                    <a class="navbar-brand scrollTo" href="#section1"><span class="icon-home"></span>首页</a>
                 </div>
                 <!-- menu section -->
                 <div id="navbar" class="collapse navbar-collapse navbar-ex1-collapse">
@@ -102,13 +130,20 @@
         <h2>关于我</h2>
         <div class="wow fadeInUp">
             <a href="#">
-                <img class="img-circle img-responsive" src="./images/timg3.jpg" alt="">
+                <img class="img-circle img-responsive" src="./images/head.jpg" alt="">
             </a>
             <ul class="ul-intro">
-                <li>年龄/26</li>
+                <li><span class="icon-leaf"></span>年龄/26岁</li>
                 <li><span class="icon-school"></span>学历/大专</li>
                 <li><span class="icon-location"></span>坐标/苏州</li>
             </ul>
+            <div class="about_div">
+                <div class="left-line"></div>
+                <div class="right-line"></div>
+                <p>2016年毕业于深圳职业技术学院，热爱前端开发，代码强迫症患者
+                    具有高效的自主学习能力和问题解析能力
+                </p>
+            </div>
         </div>
     </div>
     <div id="section3" class="cover3">
@@ -135,23 +170,24 @@
             </div>
             <div class="line"></div>
             <div class="technology wow fadeInUp" data-wow-duration="1.5s">
-                <p> 1、掌握HTML、CSS等网页制作技术，
+                <p> 1、热爱前端，
                     熟悉页面架构和布局，熟练使用photoshop把设计的图片按照需要交互的要求进行效果实现<br>
                     2、熟悉使用原生JavaScript进行开发和交互<br>
                     3、熟练运用jQuery、Bootstrap等主流框架<br>
-                    4、熟悉CSS3、HTML5,喜欢开发一些有趣的特效页面<br>
+                    4、熟悉CSS3、HTML5,喜欢用最扎实的代码做出效果上最炫<br>
                     5、熟练使用Chrome 、Firefox等主流浏览器的开发工具调试页面<br>
                     6、熟悉Vue框架,对模块化开发有着一定的理解<br>
-                    7、了解Node.js，正在学习当中
+                    7、熟练使用github进行代码管理，使用git版本管理工具。
                 </p>
             </div>
         </div>
     </div>
     <div id="section4" class="cover4">
+        <div class="cover4-bg"></div>
         <h2>作品集</h2>
         <hr>
-        <div class="container wow fadeInRight" data-wow-duration="2s">
-            <div class="col-md-3 col-xs-6">
+        <div class="container">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft">
                 <div class="img-box">
                     <img src="images/imgbox1.jpg" alt="imgbox">
                 </div>
@@ -162,7 +198,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay=".5s">
                 <div class="img-box">
                     <img src="images/imgbox6.jpg" alt="">
                 </div>
@@ -173,7 +209,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay="1s">
                 <div class="img-box">
                     <img src="images/imgbox4.jpg" alt="">
                 </div>
@@ -184,7 +220,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay="1.5s">
                 <div class="img-box">
                     <img src="images/imgbox7.jpg" alt="">
                 </div>
@@ -195,7 +231,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay="2s">
                 <div class="img-box">
                     <img src="images/imgbox5.jpg" alt="">
                 </div>
@@ -206,7 +242,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay="2.5s">
                 <div class="img-box">
                     <img src="images/imgbox2.jpg" alt="">
                 </div>
@@ -217,7 +253,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay="3s">
                 <div class="img-box">
                     <img src="images/imgbox3.jpg" alt="">
                 </div>
@@ -228,7 +264,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-xs-6 wow fadeInLeft" data-wow-delay="3.5s">
                 <div class="img-box">
                     <img src="images/imgbox8.jpg" alt="">
                 </div>
@@ -255,20 +291,20 @@
             <div class="right-box">
                 <ul>
                     <li class="li-p1">
-                        <p class="intro-p1 wow fadeInLeftBig">深圳迈进建筑设计有限公司</p>
+                        <p class="intro-p1">深圳迈进建筑设计有限公司</p>
                         <p class="duties">< 基建部/平面设计师 ><br><span>
                             根据项目策划要求进行图纸的绘制；负责建筑桥梁工程项目绘图方面的支持服务工作；
                             负责与其他部门现场协调以及图纸的修改;
                         </span></p>
                     </li>
                     <li class="li-p2">
-                        <p class="intro-p2 wow fadeInLeftBig">深圳职业技术学院</p>
+                        <p class="intro-p2">深圳职业技术学院</p>
                         <p class="duties">< 大专><br><span>
                            在校期间主修课程应用电子技术、电气控制与PLC、微机控制技术、计算机监控与控制系统、电气传动控制应用技术、供配电技术、检测与控制技术、单片机原理及应用。
                         </span></p>
                     </li>
                     <li class="li-p3">
-                        <p class="intro-p3 wow fadeInLeftBig">阜南第一中学</p>
+                        <p class="intro-p3">阜南第一中学</p>
                         <p class="duties">< 学生 ><br><span>
                             高中时代
                         </span></p>
@@ -309,6 +345,17 @@
                 <span class="blogprompt">blog</span>
             </a>
         </div>
+        <!--立方体-->
+        <div class="stage">
+            <ul class="three-d-box">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
 </div>
 <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句" ></div>
@@ -326,21 +373,28 @@
             if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};
             loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();
 </script>
-
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/mypro.js"></script>
-
+<script src="js/hover.js"></script>
 <script>
-    var wow = new WOW({
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true,
-        live: true
+    $(document).ready(function() {
+        // WAIT FOR EVERYTHING TO LOAD
+        $(window).on('load',function () {
+            $('body').addClass('loaded');
+            $('#loader-wrapper .load_title').remove();
+        });
+        //过度动画
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        });
+        wow.init();
     });
-    wow.init();
 </script>
 </body>
 </html>
