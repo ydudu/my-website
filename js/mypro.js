@@ -102,19 +102,19 @@ $(function(){
             $('.github-link').css({'left':'20px','top': '10px'});
         }else if(s>top2 && s<top3) {
             $('.right-nav li').eq(1).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'150px','top': '1px'});
+            $('.github-link').css({'left':'250px','top': '1px'});
         }else if(s>top3 && s<top4) {
             $('.right-nav li').eq(2).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'150px','top': '1px'});
+            $('.github-link').css({'left':'250px','top': '1px'});
         }else if(s>top4 && s<top5) {
             $('.right-nav li').eq(3).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'150px','top': '1px'});
+            $('.github-link').css({'left':'250px','top': '1px'});
         }else if(s>top5 && s<top6) {
             $('.right-nav li').eq(4).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'150px','top': '1px'});
+            $('.github-link').css({'left':'250px','top': '1px'});
         }else if(s>top6) {
             $('.right-nav li').eq(5).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'150px','top': '1px'});
+            $('.github-link').css({'left':'250px','top': '1px'});
         }
         });
 });

@@ -73,12 +73,18 @@ body {
     }
 }
 
-#music:hover {
-    filter: Alpha(Opacity=80);
-    opacity: 0.8;
-    cursor: pointer;
+#music .music-bg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    display: none;
 }
 
+#music:hover .music-bg{
+    display: block;
+    cursor: pointer;
+}
 .right-nav {
     position: fixed;
     top: 30%;
@@ -185,16 +191,16 @@ body {
 }
 
 .cover1 .cover1-bg ul .bg1 {
-    background-image: url(../images/timg2.jpg);
+    background-image: url(../images/timg8.jpg);
     display: block;
 }
 
 .cover1 .cover1-bg ul .bg2 {
-    background-image: url(../images/timg4.jpg);
+    background-image: url(../images/timg9.jpg);
 }
 
 .cover1 .cover1-bg ul .bg3 {
-    background-image: url(../images/timg.jpg);
+    background-image: url(../images/timg7.jpg);
 }
 
 .cover1 .cover1-bg ul .bg4 {
@@ -220,7 +226,7 @@ body {
 }
 
 .cover1:hover .two-text {
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 50px rgba(74, 79, 204, 0.7);
 }
 
 .cover1 .intro .two-text h3 {
@@ -355,7 +361,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(../images/timg.jpg);
+    background: url(../images/timg9.jpg);
     background-size: cover;
     background-attachment: fixed;
     -webkit-filter: grayscale(50%);
@@ -417,8 +423,8 @@ body {
 .cover2 .about_div .left-line {
     width: 70px;
     height: 50px;
-    border-top: 2px solid #cc231f;
-    border-left: 2px solid #cc231f;
+    border-top: 2px solid #34cc55;
+    border-left: 2px solid #34cc55;
     position: absolute;
 }
 
@@ -428,8 +434,8 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    border-bottom: 2px solid #cc231f;
-    border-right: 2px solid #cc231f;
+    border-bottom: 2px solid #34cc55;
+    border-right: 2px solid #34cc55;
 }
 
 .cover2 .ul-intro {
@@ -450,7 +456,7 @@ body {
 
 .cover2 .about_div p {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
     padding: 25px;
     text-indent: 2.4rem;
@@ -471,7 +477,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url(../images/timg2.jpg);
+    background: url(../images/timg6.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -495,7 +501,7 @@ body {
     position: relative;
     width: 850px;
     height: 400px;
-    margin: 10px auto;
+    margin: 50px auto;
 }
 
 .cover3 .cover-bottom .line {
@@ -503,7 +509,7 @@ body {
     top: 10px;
     left: 50%;
     width: 2px;
-    height: 400px;
+    height: 300px;
     background: #ccc9a0;
 }
 
@@ -566,7 +572,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(../images/timg.jpg);
+    background: url(../images/timg1.jpg);
     background-size: cover;
     background-attachment: fixed;
     -webkit-filter: grayscale(50%);
@@ -651,7 +657,7 @@ body {
     height: 100vh;
     min-height: 700px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bg-cover5 {
@@ -659,9 +665,14 @@ body {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: url(../images/timg.jpg) no-repeat;
+    background: url(../images/timg7.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
 
 }
 
@@ -765,14 +776,28 @@ body {
     display: block;
     color: #FFFFFF;
 }
-
+/*cover6*/
 .cover6 {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgba(17, 9, 34, 0.8);
+    background-color: rgba(17, 9, 34, 0.5);
 }
+.cover6-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(../images/timg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
 
+}
 .cover6 h2 {
     padding: 100px 0 0;
     font-size: 30px;
@@ -1015,7 +1040,7 @@ body {
 
     .cover2 .about_div {
         width: 85%;
-        height: 220px;
+        height: 200px;
         margin: 0 auto;
         padding-top: 20px;
         position: relative;
@@ -1071,7 +1096,7 @@ body {
 
     .cover3 .cover-bottom .technology {
         position: absolute;
-        padding: 0 20px 0 10px;
+        padding: 0 15px 0 15px;
         width: 340px;
         top: 55%;
     }

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d7273c8-3395-4705-9f90-01efd4134993" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/css/loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/hover.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/cv.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/icon-my.eot" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts/icon-my.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/icon-my.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts/icon-my.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/icon-my.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts/icon-my.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/icon-my.woff" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts/icon-my.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/timg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/timg5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/mypro.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mypro.js" afterDir="false" />
     </list>
@@ -33,22 +27,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+            <state relative-caret-position="3834">
+              <caret line="317" column="37" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="37" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#6;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#7;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -58,8 +45,8 @@
       <file leaf-file-name="cv.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/cv.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1215">
-              <caret line="370" column="16" selection-start-line="370" selection-start-column="16" selection-end-line="370" selection-end-column="16" />
+            <state relative-caret-position="297">
+              <caret line="1100" column="17" lean-forward="true" selection-start-line="1100" selection-start-column="17" selection-end-line="1100" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -67,17 +54,8 @@
       <file leaf-file-name="mypro.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/mypro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hover.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/hover.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            <state relative-caret-position="3132">
+              <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -110,9 +88,9 @@
         <option value="$PROJECT_DIR$/js/canvas.js" />
         <option value="$PROJECT_DIR$/js/canvasStar.js" />
         <option value="$PROJECT_DIR$/js/canvasstar.js" />
+        <option value="$PROJECT_DIR$/js/hover.js" />
         <option value="$PROJECT_DIR$/js/mypro.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/hover.js" />
         <option value="$PROJECT_DIR$/css/cv.css" />
       </list>
     </option>
@@ -124,8 +102,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="175" />
-    <option name="y" value="35" />
+    <option name="x" value="550" />
+    <option name="y" value="114" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -212,15 +190,16 @@
       <workItem from="1529111519305" duration="8964000" />
       <workItem from="1529147634341" duration="17225000" />
       <workItem from="1529212412475" duration="28178000" />
-      <workItem from="1529293798442" duration="31379000" />
+      <workItem from="1529293798442" duration="42764000" />
+      <workItem from="1529380329646" duration="738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213305000" />
+    <option name="totallyTimeSpent" value="225428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="465" y="208" width="1386" height="788" extended-state="0" />
+    <frame x="550" y="114" width="1386" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49015316" visible="true" weight="0.14688428" />
@@ -261,6 +240,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/cv.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9801">
+          <caret line="363" column="35" selection-start-line="363" selection-start-column="35" selection-end-line="363" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -560,9 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/canvasstar.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/loader.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -570,38 +553,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mypro.js">
+    <entry file="file://$PROJECT_DIR$/js/hover.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="58" />
+        <state relative-caret-position="216">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/hover.js">
+    <entry file="file://$PROJECT_DIR$/js/mypro.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        <state relative-caret-position="3132">
+          <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+        <state relative-caret-position="3834">
+          <caret line="317" column="37" selection-start-line="317" selection-start-column="37" selection-end-line="317" selection-end-column="37" />
           <folding>
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#7;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
@@ -609,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/cv.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
-          <caret line="370" column="16" selection-start-line="370" selection-start-column="16" selection-end-line="370" selection-end-column="16" />
+        <state relative-caret-position="297">
+          <caret line="1100" column="17" lean-forward="true" selection-start-line="1100" selection-start-column="17" selection-end-line="1100" selection-end-column="17" />
         </state>
       </provider>
     </entry>
