@@ -43,14 +43,19 @@ $(function(){
             scrollTop: 0
         },500);
     });
-    $(window).scroll(function(){
-        if($('html,body').scrollTop()>300){
-            $('.return-top').fadeIn(800);
-        }else{
-            $('.return-top').fadeOut(800);
-        }
-    });
 
+    var min_height = document.documentElement.clientHeight /2;
+    function returnTop(){
+        $(window).scroll(function(){
+            var s = $(window).scrollTop();
+            if(s > min_height){
+                $('.return-top').fadeIn(800);
+            }else{
+                $('.return-top').fadeOut(800);
+            }
+        });
+    }
+    returnTop();
 });
 $(function(){
     $('.li-o1,.li-p1').hover(function(){
@@ -97,26 +102,33 @@ $(function(){
     $('.right-nav li').eq(index).addClass('sploosh').siblings().removeClass('sploosh');
     $(window).scroll(function() {
         var s = $(window).scrollTop();
+        var rightNavLi = $('.right-nav li');
+        var gitLink = $('.github-link');
         if(s>top1 && s< top2) {
-            $('.right-nav li').eq(0).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'20px','top': '10px'});
+            rightNavLi.eq(0).addClass('sploosh').siblings().removeClass('sploosh');
+            gitLink.css({'left':'20px','top': '10px'});
         }else if(s>top2 && s<top3) {
-            $('.right-nav li').eq(1).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'250px','top': '1px'});
+            rightNavLi.eq(1).addClass('sploosh').siblings().removeClass('sploosh');
+            gitLink.css({'left':'250px','top': '1px'});
         }else if(s>top3 && s<top4) {
-            $('.right-nav li').eq(2).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'250px','top': '1px'});
+            rightNavLi.eq(2).addClass('sploosh').siblings().removeClass('sploosh');
+            gitLink.css({'left':'250px','top': '1px'});
         }else if(s>top4 && s<top5) {
-            $('.right-nav li').eq(3).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'250px','top': '1px'});
+            rightNavLi.eq(3).addClass('sploosh').siblings().removeClass('sploosh');
+            gitLink.css({'left':'250px','top': '1px'});
         }else if(s>top5 && s<top6) {
-            $('.right-nav li').eq(4).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'250px','top': '1px'});
+            rightNavLi.eq(4).addClass('sploosh').siblings().removeClass('sploosh');
+            gitLink.css({'left':'250px','top': '1px'});
         }else if(s>top6) {
-            $('.right-nav li').eq(5).addClass('sploosh').siblings().removeClass('sploosh');
-            $('.github-link').css({'left':'250px','top': '1px'});
+            rightNavLi.eq(5).addClass('sploosh').siblings().removeClass('sploosh');
+            gitLink.css({'left':'250px','top': '1px'});
         }
-        });
+        if(s>top6){
+            $('#comments').fadeOut();
+        }else{
+            $('#comments').fadeIn();
+        }
+    });
 });
 $(function(){
     var timer1 = null;
@@ -176,10 +188,10 @@ $(function(){
 });
 //浅变轮番
 var timer  = null;
+clearInterval(timer);
 $(function(){
     var iLi = $('.cover1-bg li');
     var i = iLi.index();
-    clearInterval(timer);
     timer = setInterval(setTimer,5000);
     function setTimer(){
         if(i >= 3){

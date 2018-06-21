@@ -364,11 +364,6 @@ body {
     background: url(../images/timg9.jpg);
     background-size: cover;
     background-attachment: fixed;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
     z-index: -1;
 }
 
@@ -381,7 +376,7 @@ body {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a {
-    color: #FFF;
+    color: #1af418;
     transition: all .5s;
 }
 
@@ -452,6 +447,7 @@ body {
 
 .cover2 .ul-intro li span {
     margin-right: 10px;
+    color: #1af418;
 }
 
 .cover2 .about_div p {
@@ -481,11 +477,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
 }
 
 .cover3 h2 {
@@ -565,7 +556,6 @@ body {
     position: relative;
     width: 100%;
     min-height: 700px;
-    background: rgba(0, 0, 0, 0.3);
 }
 
 .cover4-bg {
@@ -574,12 +564,7 @@ body {
     height: 100%;
     background: url(../images/timg1.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
+    filter: blur(2px);
     z-index: -1;
 }
 
@@ -594,7 +579,7 @@ body {
 
 .cover4 .container {
     text-align: center;
-    overflow: hidden;
+    position: relative;
     max-width: 1200px !important;
 }
 
@@ -606,42 +591,41 @@ body {
 .cover4 .img-box {
     padding-bottom: 100%;
     height: 0;
-    overflow: hidden;
     text-align: center;
     transition: all 0.4s;
-}
-
-.cover4 .container > div:hover .img-box {
-    filter: brightness(0.2);
-    transform: scale(1.1);
-}
-
-.cover4 .container > div:hover .move-bg {
-    display: block;
+    position: relative;
 }
 
 .cover4 .img-box img {
     width: 100%;
     vertical-align: middle;
-
 }
 
-.cover4 .container a {
-    color: white;
-    text-decoration: none;
-}
-
-.cover4 .container a .move-bg {
+.cover4 .container a{
     position: absolute;
     width: 100%;
-    top: 50%;
-    margin-top: -46px;
+    background: rgba(161, 175, 234, 0.6);
+    top: 0;
     left: 0;
     display: none;
+    color: #fff;
+    text-decoration: none;
+}
+.cover4 .container > div:hover a{
+    display: block;
+    animation: moveheight .5s linear forwards;
+}
+@keyframes moveheight{
+    from{
+        height: 0;
+    }to{
+    height: 100%;
+         }
 }
 
 .cover4 .container a .move-bg h4 {
-    font-size: 16px;;
+    margin-top: 20%;
+    font-size: 16px;
 }
 
 .cover4 .container a .move-bg p {
@@ -657,7 +641,7 @@ body {
     height: 100vh;
     min-height: 700px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-cover5 {
@@ -668,12 +652,6 @@ body {
     background: url(../images/timg7.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
-
 }
 
 .cover5 h2 {
@@ -781,22 +759,16 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgba(17, 9, 34, 0.5);
+    background-color: rgba(20, 20, 20, 0.2);
 }
 .cover6-bg{
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url(../images/timg.jpg) no-repeat;
+    background: url(../images/timg2.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
-
 }
 .cover6 h2 {
     padding: 100px 0 0;
@@ -923,9 +895,8 @@ body {
     top: 50%;
     margin: -100px 0 0 -100px;
     transform-style: preserve-3d;
-    animation: moveba 5s linear infinite;
+    animation: moveba 8s linear infinite;
 }
-
 @keyframes moveba {
     0% {
         transform: rotateY(0deg);
@@ -941,52 +912,50 @@ body {
 .three-d-box > li {
     position: absolute;
     width: 200px;
-    height: 200px;
+    height: 150px;
     left: 0;
     top: 0;
     font-size: 50px;
     line-height: 200px;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.8;
 }
-
+.three-d-box > li img{
+    width: 100%;
+    height: 100%;
+}
 .stage .three-d-box > li:nth-child(1) {
     background-color: #61f3ad;
-    transform: translateZ(-100px);
+    transform: translateZ(-200px);
 }
 
 .stage .three-d-box > li:nth-child(2) {
     background-color: greenyellow;
-    transform: translateZ(100px);
-}
-
-.stage .three-d-box > li:nth-child(3) {
-    background-color: #974cb3;
-    transform: rotateX(90deg) translateZ(100px);
-}
-
-.stage .three-d-box > li:nth-child(4) {
-    background-color: #cc1718;
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: translateZ(200px);
 }
 
 .stage .three-d-box > li:nth-child(5) {
     background-color: #b38e4d;
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(200px);
 }
 
 .stage .three-d-box > li:nth-child(6) {
     background-color: #5c32b3;
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(200px);
 }
 
+.chanyan{
+    background-color: #110922
+}
+#SOHUCS #SOHU_MAIN .issue-wrap-gw .wrap-word-gw{
+    color: #fff;
+}
 /*------------------------------------------------------------*/
 @media only screen and (max-width: 1224px) {
     .cover1 .intro .two-text h3 {
         font-size: 50px;
     }
 }
-
 @media only screen and (max-width: 770px) {
     .right-nav {
         display: none;
@@ -1101,12 +1070,9 @@ body {
         top: 55%;
     }
 
-    .cover4 .img-box {
-        filter: brightness(0.2);
-    }
-
-    .cover4 .container a .move-bg {
+    .cover4 .img-box a{
         display: block;
+        height: 100%;
     }
 
     .cover5 .block {
@@ -1149,6 +1115,10 @@ body {
 }
 
 @media only screen and (max-width: 415px) {
+    #comments{
+        display: none;
+        opacity: 0;
+    }
     .cover1 .intro span {
         width: 200px;
         height: 35px;
