@@ -151,6 +151,13 @@ body {
     }
 }
 
+.content hr{
+    width: 150px;
+    height: 3px;
+    margin: 10px auto;
+    background: rgb(255, 210, 0);
+    border: 0;
+}
 /*...................................................................*/
 .cover1 {
     position: relative;
@@ -226,7 +233,7 @@ body {
 }
 
 .cover1:hover .two-text {
-    box-shadow: 0 0 50px rgba(74, 79, 204, 0.7);
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.7);
 }
 
 .cover1 .intro .two-text h3 {
@@ -345,7 +352,8 @@ body {
 }
 
 #comments a:hover {
-    background-color: #0fcc38;
+    color: #0fcc38;
+    border:1px solid #0fcc38;
 }
 
 /*cover2*/
@@ -556,6 +564,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 700px;
+    background: rgba(0,0,0,0.5);
 }
 
 .cover4-bg {
