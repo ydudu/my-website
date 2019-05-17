@@ -18,31 +18,20 @@ body {
     left: 20px;
     top: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.github-link a{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.github-link a img{
-    width: 50px;
-    height: 100%;
-    border-radius: 50%;
-    float: left;
-    margin-left: 4%;
+    border: 1px solid #C6E2FF;
 }
 .github-link a span{
-    height: 100%;
-    display: inline-block;
-    float: right;
-    text-align: center;
-    padding-top: 15px;
-    padding-right: 10px;
     color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 13px;
 }
-.github-link a span:hover{
-    color: yellow;
+.github-link:hover{
+    background-color: rgba(111, 110, 110, 0.9);
+    cursor: pointer;
+}
+.github-link:hover span{
+    color: #ff2e;
 }
 .content {
     text-align: center;
@@ -50,7 +39,7 @@ body {
     overflow: hidden;
 }
 
-#music {
+#music{
     background: url(../images/music-bg.jpg) no-repeat;
     width: 40px;
     height: 40px;
@@ -62,6 +51,8 @@ body {
     position: fixed;
     transition: all .5s;
     animation: musicrun 5s infinite linear;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 @keyframes musicrun {
@@ -73,18 +64,6 @@ body {
     }
 }
 
-#music .music-bg{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.3);
-    display: none;
-}
-
-#music:hover .music-bg{
-    display: block;
-    cursor: pointer;
-}
 .right-nav {
     position: fixed;
     top: 30%;
@@ -93,9 +72,9 @@ body {
 }
 
 .dashed {
-    margin-top: -160px;
-    margin-left: 21px;
-    height: 170px;
+    margin-top: -170px;
+    margin-left: 22px;
+    height: 180px;
     width: 1px;
     display: block;
     border-right: 1px dashed #9dd0df;
@@ -108,19 +87,16 @@ body {
 
 .right-nav li a {
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     background: rgba(66, 166, 223, 1);
-    border: 3px solid rgb(86, 70, 100);
+    border: 4px solid rgb(86, 70, 100);
     border-radius: 50%;
     cursor: pointer;
 }
-
 .right-nav li a:hover {
     background: rgb(255, 255, 255);
-    border: 3px solid rgba(86, 70, 100, 0.5);
 }
-
 .sploosh {
     background: rgba(66, 166, 223, 1);
     animation: sploosh 1.25s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
@@ -135,7 +111,7 @@ body {
         background: rgba(66, 166, 223, 0.7);
     }
     100% {
-        box-shadow: 0 0 0 10px rgba(66, 166, 223, 0);
+        box-shadow: 0 0 0 12px rgba(66, 166, 223, 0);
         background: rgba(66, 166, 223, 1);
     }
 }
@@ -146,34 +122,63 @@ body {
         -webkit-background: rgba(66, 166, 223, 0.7);
     }
     100% {
-        -webkit-box-shadow: 0 0 0 300px rgba(66, 166, 223, 0);
+        -webkit-box-shadow: 0 0 0 12px rgba(66, 166, 223, 0);
         -webkit-background: rgba(66, 166, 223, 1);
     }
 }
-
 .content hr{
-    width: 150px;
+    width: 0;
     height: 3px;
     margin: 10px auto;
     background: rgb(255, 210, 0);
     border: 0;
+    transition: all 1s .5s ;
+}
+.content .active hr{
+    width: 150px;
+}
+.content .fadein{
+    opacity: 0;
+    -webkit-transform: translateX(-4em);
+    -moz-transform: translateX(-4em);
+    -ms-transform: translateX(-4em);
+    -o-transform: translateX(-4em);
+    transform: translateX(-4em);
+    -webkit-transition: all 1s 0.3s;;
+    -moz-transition: all 1s 0.3s;;
+    -ms-transition: all 1s 0.3s;;
+    -o-transition: all 1s 0.3s;;
+    transition: all 1s 0.3s;
+}
+.content .active .fadein {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 /*...................................................................*/
-.cover1 {
+.cover1,.cover2,.cover3,.cover5,.cover6{
     position: relative;
     width: 100%;
     height: 100vh;
     min-height: 700px;
-
 }
-
 .cover1 .cover1-bg {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
-
 .cover1 .cover1-bg ul li {
     position: absolute;
     background-size: cover;
@@ -184,7 +189,6 @@ body {
     display: none;
     animation: port 5s forwards;
 }
-
 @keyframes port {
     0% {
         transform: scale(1);;
@@ -196,24 +200,19 @@ body {
         transform: scale(1);
     }
 }
-
 .cover1 .cover1-bg ul .bg1 {
     background-image: url(../images/timg8.jpg);
     display: block;
 }
-
 .cover1 .cover1-bg ul .bg2 {
     background-image: url(../images/timg9.jpg);
 }
-
 .cover1 .cover1-bg ul .bg3 {
     background-image: url(../images/timg7.jpg);
 }
-
 .cover1 .cover1-bg ul .bg4 {
     background-image: url(../images/timg5.jpg);
 }
-
 .cover1 .intro {
     position: absolute;
     width: 100%;
@@ -222,7 +221,6 @@ body {
     top: 150px;
     transition: all 1s;
 }
-
 .cover1 .intro .two-text {
     width: 740px;
     margin: 0 auto;
@@ -230,12 +228,11 @@ body {
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.2);
     transition: all .5s;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.7);
 }
-
-.cover1:hover .two-text {
-    box-shadow: 0 0 60px rgba(255, 255, 255, 0.7);
-}
-
+/*.cover1:hover .two-text {
+    box-shadow: 0 0 60px rgba(22, 25, 255, 0.7);
+}*/
 .cover1 .intro .two-text h3 {
     letter-spacing: 2px;
     color: snow;
@@ -246,7 +243,6 @@ body {
     top: 500px;
     cursor: default;
 }
-
 .cover1 .intro .two-text .intro_p {
     font-size: 25px;
     color: snow;
@@ -256,7 +252,6 @@ body {
     line-height: 30px;
     cursor: default;
 }
-
 .cover1 .intro .two-text .name {
     font-size: 20px;
     color: snow;
@@ -265,7 +260,6 @@ body {
     line-height: 30px;
     cursor: default;
 }
-
 .cover1 .intro .two-text .email {
     font-size: 20px;
     color: #fff;
@@ -273,7 +267,6 @@ body {
     letter-spacing: 4px;
     line-height: 30px;
 }
-
 .cover1 .intro span {
     display: inline-block;
     width: 160px;
@@ -285,18 +278,15 @@ body {
     margin: 10px;
     cursor: pointer;
 }
-
 .cover1 .two-box {
     margin: 30px;
     display: none;
 }
-
 .cover1 .intro .about_me {
     background: rgba(97, 243, 173, 0.7);
     border: 1px solid #fff;
     color: white;
 }
-
 .cover1 .intro .my_pro {
     background: rgba(108, 153, 204, 0.7);
     border: 1px solid #31d5b3;
@@ -326,7 +316,6 @@ body {
     color: #FFFFFF;
     font-size: 38px;
 }
-
 .return-top:hover span {
     color: #ff2330;
 }
@@ -344,42 +333,37 @@ body {
     color: #FFFFFF;
     display: block;
     background: rgba(0, 0, 0, 0.5);
-    padding: 15px 40px;
+    padding: 16px 40px;
     border-radius: 10px;
     border: 1px solid #FFFFFF;
     cursor: pointer;
     text-decoration: none;
+    letter-spacing: 5px;
 }
-
 #comments a:hover {
     color: #0fcc38;
     border:1px solid #0fcc38;
 }
-
 /*cover2*/
-.cover2 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    min-height: 700px;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.cover2-bg {
+.cover2-bg,.cover3-bg,.cover4-bg,.cover5-bg,.cover6-bg{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(../images/timg9.jpg);
-    background-size: cover;
+    background: #96CDCD;
     background-attachment: fixed;
+    background-size: cover;
     z-index: -1;
 }
-
+.cover3-bg{
+    background: #9BCD9B;
+}
+.cover5-bg{
+    background: #7AC5CD;
+}
 .navbar {
     background: rgba(0, 0, 0, 0.6);
     border: none
 }
-
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -387,7 +371,6 @@ body {
     color: #1af418;
     transition: all .5s;
 }
-
 .navbar-default .navbar-nav .active a,
 .navbar-default .navbar-nav .active a:hover,
 .navbar-default .navbar-nav .active a:focus,
@@ -412,9 +395,8 @@ body {
     text-align: center;
     line-height: 30px;
     letter-spacing: 2px;
-    color: #FFFFFF;
+    color: yellow;
 }
-
 .cover2 .about_div {
     width: 700px;
     height: 140px;
@@ -422,7 +404,6 @@ body {
     padding: 20px 0;
     position: relative;
 }
-
 .cover2 .about_div .left-line {
     width: 70px;
     height: 50px;
@@ -440,56 +421,38 @@ body {
     border-bottom: 2px solid #34cc55;
     border-right: 2px solid #34cc55;
 }
-
+.cover2 .border-side{
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
 .cover2 .ul-intro {
+    width: 700px;
+    border-radius: 10px;
     display: inline-block;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
 }
-
 .cover2 .ul-intro li {
-    font-size: 20px;
-    margin: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px;
     list-style: none;
-    color: #FFFFFF;
+    color: #000;
     display: inline-block;
 }
-
-.cover2 .ul-intro li span {
-    margin-right: 10px;
-    color: #1af418;
-}
-
 .cover2 .about_div p {
-    color: #fff;
+    color: #000;
     font-size: 1rem;
+    font-weight: bold;
     text-align: justify;
     padding: 25px;
     text-indent: 2.4rem;
     line-height: 2rem;
 }
-
 /*cover3*/
-.cover3 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    min-height: 700px;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.cover3 .cover3-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url(../images/timg6.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
 .cover3 h2 {
     padding: 100px 0 0;
-    color: #fbfff9;
+    color: yellow;
     font-size: 30px;
     text-align: center;
     line-height: 30px;
@@ -509,7 +472,7 @@ body {
     left: 50%;
     width: 2px;
     height: 300px;
-    background: #ccc9a0;
+    background: #ffffff;
 }
 
 .cover3 .cover-bottom .technology {
@@ -518,17 +481,19 @@ body {
     top: 10px;
     right: 0;
     text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .cover3 .cover-bottom .technology p {
-    color: #fbfff9;
+    color: #ffffff;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 22px;
 }
 
 .cover3 .cover-bottom .img-wrapper {
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
 }
 
 .cover3 .truck {
@@ -548,8 +513,8 @@ body {
 .cover3 .truck .all-tec {
     position: absolute;
     width: 70%;
-    top: 65px;
-    left: 100px;
+    top: 35px;
+    left: 90px;
     text-align: center;
 }
 
@@ -558,23 +523,12 @@ body {
     font-size: 40px;
     margin-top: 15px;
 }
-
-/*cover4*/
+    /*cover4*/
 .cover4 {
     position: relative;
     width: 100%;
     min-height: 700px;
     background: rgba(0,0,0,0.5);
-}
-
-.cover4-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../images/timg1.jpg);
-    background-size: cover;
-    filter: blur(2px);
-    z-index: -1;
 }
 
 .cover4 > h2 {
@@ -583,7 +537,7 @@ body {
     text-align: center;
     line-height: 30px;
     letter-spacing: 2px;
-    color: #fff;
+    color: yellow;
 }
 
 .cover4 .container {
@@ -596,76 +550,41 @@ body {
     padding: 10px;
     position: relative;
 }
-
-.cover4 .img-box {
-    padding-bottom: 100%;
-    height: 0;
-    text-align: center;
-    transition: all 0.4s;
-    position: relative;
+.cover4 .container a{
+   text-decoration: none;
 }
-
+.cover4 .img-box {
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    transition: all 0.2s linear
+}
+.cover4 .img-box:hover{
+    top: -8px;
+    box-shadow: 0 10px 30px #e5e5e5;
+}
 .cover4 .img-box img {
     width: 100%;
+    height: 120px;
     vertical-align: middle;
 }
-
-.cover4 .container a{
-    position: absolute;
-    width: 100%;
-    background: rgba(161, 175, 234, 0.6);
-    top: 0;
-    left: 0;
-    display: none;
-    color: #fff;
-    text-decoration: none;
-}
-.cover4 .container > div:hover a{
-    display: block;
-    animation: moveheight .5s linear forwards;
-}
-@keyframes moveheight{
-    from{
-        height: 0;
-    }to{
-    height: 100%;
-         }
-}
-
-.cover4 .container a .move-bg h4 {
-    margin-top: 20%;
-    font-size: 16px;
-}
-
-.cover4 .container a .move-bg p {
-    padding: 0 1em;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
+.cover4 .img-box .describe{
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /*cover5 */
-.cover5 {
-    width: 100%;
-    height: 100vh;
-    min-height: 700px;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bg-cover5 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: url(../images/timg7.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .cover5 h2 {
     padding: 100px 0 0;
-    color: #fff;
+    color: yellow;
     font-size: 30px;
     text-align: center;
     line-height: 30px;
@@ -770,22 +689,13 @@ body {
     height: 100vh;
     background-color: rgba(20, 20, 20, 0.2);
 }
-.cover6-bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url(../images/timg2.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 .cover6 h2 {
     padding: 100px 0 0;
     font-size: 30px;
     text-align: center;
     line-height: 30px;
     letter-spacing: 2px;
-    color: #fff;
+    color: yellow;
 }
 
 .cover6 .content-me {
@@ -796,7 +706,7 @@ body {
     width: 34px;
     height: 34px;
     display: inline-block;
-    background-color: #64645e;
+    background-color: #ff2e47;
     line-height: 34px;
     border-radius: 50%;
     text-decoration: none;
@@ -886,80 +796,35 @@ body {
     height: 100%;
 }
 
-/*立体*/
-.stage {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 10px auto;
-    perspective: 800px;
-
-}
-
-.three-d-box {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -100px 0 0 -100px;
-    transform-style: preserve-3d;
-    animation: moveba 8s linear infinite;
-}
-@keyframes moveba {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
-.three-d-box > li {
-    position: absolute;
-    width: 200px;
-    height: 150px;
-    left: 0;
-    top: 0;
-    font-size: 50px;
-    line-height: 200px;
-    text-align: center;
-    opacity: 0.8;
-}
-.three-d-box > li img{
+.chanyan{
     width: 100%;
     height: 100%;
-}
-.stage .three-d-box > li:nth-child(1) {
-    background-color: #61f3ad;
-    transform: translateZ(-200px);
-}
-
-.stage .three-d-box > li:nth-child(2) {
-    background-color: greenyellow;
-    transform: translateZ(200px);
-}
-
-.stage .three-d-box > li:nth-child(5) {
-    background-color: #b38e4d;
-    transform: rotateY(90deg) translateZ(200px);
-}
-
-.stage .three-d-box > li:nth-child(6) {
-    background-color: #5c32b3;
-    transform: rotateY(-90deg) translateZ(200px);
-}
-
-.chanyan{
-    background-color: #110922
+    background: url(../images/timg7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 #SOHUCS #SOHU_MAIN .issue-wrap-gw .wrap-word-gw{
     color: #fff;
 }
-/*------------------------------------------------------------*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    font-size: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #FFFFFF;
+}
+#busuanzi_container_site_uv,#busuanzi_container_site_pv{
+    font-size: 12px;
+    line-height: 18px;
+}
+#busuanzi_value_site_uv,#busuanzi_value_site_pv{
+    font-size: 16px;
+    font-weight: bold;
+    color: #17d715;
+}
+/*---------------------------------------------------------*/
 @media only screen and (max-width: 1224px) {
     .cover1 .intro .two-text h3 {
         font-size: 50px;
@@ -975,76 +840,61 @@ body {
     #comments {
         display: none;
     }
-
     #music {
         margin-top: 0;
         top: 5px;
         left: 10px;
     }
-
     .cover1 .intro {
         top: 200px;
     }
-
     .cover1 .intro .two-box {
         display: block;
     }
-
     .cover1 .intro .two-text {
         width: 100%;
     }
-
     .cover1 .intro .two-text h3 {
         font-size: 28px;
         margin-bottom: 20px;
     }
-
     .cover1 .intro .two-text .intro_p {
         font-size: 20px;
     }
-
     .cover1 .intro .two-text .name {
         font-size: 16px;
     }
-
     .navbar-default .navbar-header .navbar-brand {
         margin-left: 50px;
     }
-
     .img-circle {
         width: 135px;
         height: 135px;
     }
-
     .cover2 .about_div {
         width: 85%;
-        height: 200px;
+        height: 50%;
         margin: 0 auto;
-        padding-top: 20px;
+        padding-top: 10px;
         position: relative;
     }
-
     .cover2 .ul-intro li {
-        font-size: 20px;
+        font-size: 1rem;
         margin: 20px;
         list-style: none;
-        color: #FFFFFF;
         display: block;
     }
-
     .cover3 .cover-bottom {
         width: 340px;
         position: relative;
         margin: 0 auto;
         text-align: center;
     }
-
     .cover3 .cover-bottom .img-wrapper {
         width: 100%;
         height: 240px;
     }
-
-    .cover3 .truck {
+     .cover3 .truck {
         width: 240px;
         height: 240px;
         margin: 0 auto;
@@ -1063,7 +913,6 @@ body {
     .cover3 .truck .all-tec span {
         font-size: 25px;
     }
-
     .cover3 .cover-bottom .line {
         height: 2px;
         width: 340px;
@@ -1071,51 +920,40 @@ body {
         left: 0;
         top: 50%;
     }
-
     .cover3 .cover-bottom .technology {
         position: absolute;
         padding: 0 15px 0 15px;
         width: 340px;
         top: 55%;
     }
-
-    .cover4 .img-box a{
-        display: block;
-        height: 100%;
+    .cover3 .cover-bottom .technology p{
+        font-size: 14px;
     }
-
     .cover5 .block {
         width: auto !important;
     }
-
     .cover5 .block .left-box {
         margin: 50px 0 10px 0;
         flex: 0 0 100px;
         border-right: 8px solid #dddbd8;
     }
-
     .cover5 .block .left-box ul span {
         margin-left: 0px;
         font-size: 14px;
     }
-
     .cover5 .block .left-box ul li b {
         display: none;
     }
-
     .cover5 .block .left-box ul li {
         margin-top: 10px;
     }
-
     .cover5 .block .left-box ul li i {
         display: inline-block;
     }
-
     .cover5 .block .right-box {
         padding-left: 12px;
         margin-top: 10px;
     }
-
     .intro-p1, .intro-p2, .intro-p3 {
         font-size: 24px;
         color: #dddbd8;
@@ -1135,11 +973,35 @@ body {
         font-size: 16px;
         margin-top: 10px;
     }
-
     .cover4 .container a .move-bg p {
         font-size: 12px;
     }
-
+    .cover2 .ul-intro{
+        width: 95%;
+    }
+    .cover2 .ul-intro li {
+        width: 100%;
+        list-style: none;
+        display: block;
+    }
+    .cover2 .about_div {
+        width: 95%;
+        height: 50%;
+        margin: 0 auto;
+        padding-top: 0;
+        position: relative;
+    }
+    .cover2 .about_div p{
+        padding: 10px;
+    }
+    .cover4 .img-box img {
+        width: 100%;
+        height: 100px;
+        vertical-align: middle;
+    }
+    .cover4 .img-box .describe{
+        font-size: 16px;
+    }
     .cover5 .block .left-box ul li {
         margin-top: 30px;
     }

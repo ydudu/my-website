@@ -1,7 +1,6 @@
 //音乐关闭
 $(function(){
     $("#music").bind("click", function() {
-        $(this).toggleClass("music-img");
         var audio = $("#music audio")[0];
         if (audio.paused) {
             audio.play(); //audio.play();// 播放
@@ -30,11 +29,13 @@ $(function(){
         }
     });
 	// bootstrap单击导航条下的li后，自动收回
+    var collaPase = $('#collapse');
+    var navBar =  $("#navbar");
     $(".nav > li > a").click(function(){
-            $('#collapse').addClass("collapsed");
-            $('#collapse').attr("aria-expanded",false);
-            $("#navbar").removeClass("in");
-            $("#navbar").attr("aria-expanded",false);
+        collaPase.addClass("collapsed");
+        collaPase.attr("aria-expanded",false);
+        navBar.removeClass("in");
+        navBar.attr("aria-expanded",false);
     });
 
 	//return-top
@@ -58,32 +59,9 @@ $(function(){
     returnTop();
 });
 $(function(){
-    $('.li-o1,.li-p1').hover(function(){
-            $('.intro-p1').css('color','#1bbe22');
-            $('.li-o1 em').css({'top':'35px','right':'-18px','width':'30px','height': '30px','border':'8px solid #ffff00'});
-        },
-        function(){
-            $('.intro-p1').css('color','');
-            $('.li-o1 em').css({'top':'40px','right':'-14px','width':'20px','height': '20px','border':'2px solid #ffff00'});
-        });
-    $('.li-o2,.li-p2').hover(function(){
-            $('.intro-p2').css('color','#1bbe22');
-            $('.li-o2 em').css({'top':'35px','right':'-18px','width':'30px','height': '30px','border':'8px solid #ffff00'});
-        },
-        function(){
-            $('.intro-p2').css('color','');
-            $('.li-o2 em').css({'top':'40px','right':'-14px','width':'20px','height': '20px','border':'2px solid #ffff00'});
-        });
-    $('.li-o3,.li-p3').hover(function(){
-            $('.intro-p3').css('color','#1bbe22');
-            $('.li-o3 em').css({'top':'35px','right':'-18px','width':'30px','height': '30px','border':'8px solid #ffff00'});
-        },
-        function(){
-            $('.intro-p3').css('color','');
-            $('.li-o3 em').css({'top':'40px','right':'-14px','width':'20px','height': '20px','border':'2px solid #ffff00'});
-        });
     //按钮移入移出
-    $('.navbar-default .navbar-toggle').hover(function(){
+    var navToggle = $('.navbar-default .navbar-toggle');
+    navToggle.hover(function(){
             $(this).css('background','#64645e');
     },function(){
         $(this).css('background','#64645e');
@@ -98,30 +76,42 @@ $(function(){
     var top4 = $("#section4").offset().top-30;
     var top5 = $("#section5").offset().top-30;
     var top6 = $("#section6").offset().top-30;
-    var index= $('.right-nav li').index();
-    $('.right-nav li').eq(index).addClass('sploosh').siblings().removeClass('sploosh');
+
+    var section2 = $("#section2");
+    var section3 = $("#section3");
+    var section4 = $("#section4");
+    var section5 = $("#section5");
+    var section6 = $("#section6");
+
+    var rightNavLi = $('.right-nav li');
+    var index= rightNavLi.index();
+    rightNavLi.eq(index).addClass('sploosh').siblings().removeClass('sploosh');
     $(window).scroll(function() {
         var s = $(window).scrollTop();
-        var rightNavLi = $('.right-nav li');
         var gitLink = $('.github-link');
-        if(s>top1 && s< top2) {
+        if(s>top1 && s<top2) {
             rightNavLi.eq(0).addClass('sploosh').siblings().removeClass('sploosh');
             gitLink.css({'left':'20px','top': '10px'});
         }else if(s>top2 && s<top3) {
             rightNavLi.eq(1).addClass('sploosh').siblings().removeClass('sploosh');
             gitLink.css({'left':'250px','top': '1px'});
+            section2.addClass("active");
         }else if(s>top3 && s<top4) {
             rightNavLi.eq(2).addClass('sploosh').siblings().removeClass('sploosh');
             gitLink.css({'left':'250px','top': '1px'});
+            section3.addClass("active");
         }else if(s>top4 && s<top5) {
             rightNavLi.eq(3).addClass('sploosh').siblings().removeClass('sploosh');
             gitLink.css({'left':'250px','top': '1px'});
+            section4.addClass("active");
         }else if(s>top5 && s<top6) {
             rightNavLi.eq(4).addClass('sploosh').siblings().removeClass('sploosh');
             gitLink.css({'left':'250px','top': '1px'});
+            section5.addClass("active");
         }else if(s>top6) {
             rightNavLi.eq(5).addClass('sploosh').siblings().removeClass('sploosh');
             gitLink.css({'left':'250px','top': '1px'});
+            section6.addClass("active");
         }
         if(s>top6){
             $('#comments').fadeOut();
@@ -187,20 +177,21 @@ $(function(){
     });
 });
 //浅变轮番
-var timer  = null;
-clearInterval(timer);
 $(function(){
+    var timer  = 0;
     var iLi = $('.cover1-bg li');
     var i = iLi.index();
-    timer = setInterval(setTimer,5000);
-    function setTimer(){
-        if(i >= 3){
-            i=0;
-        }else{
-            i++;
-        }
-        iLi.eq(i).fadeIn().siblings().fadeOut();
-
+    startMove();
+    function startMove() {
+        clearInterval(timer);
+        timer = setInterval(function(){
+            if(i >= 3){
+                i=0;
+            }else{
+                i++;
+            }
+            iLi.eq(i).fadeIn().siblings().fadeOut();
+        },5000);
     }
 });
 
