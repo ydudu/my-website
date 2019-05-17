@@ -799,7 +799,7 @@ canvas {
 .chanyan{
     width: 100%;
     height: 100%;
-    background: url(../images/timg7.jpg);
+    background: #a0bc7f;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -878,9 +878,12 @@ canvas {
         padding-top: 10px;
         position: relative;
     }
+    .cover2 .ul-intro{
+        width: 85%;
+    }
     .cover2 .ul-intro li {
         font-size: 1rem;
-        margin: 20px;
+        margin: 15px 0 15px 0;
         list-style: none;
         display: block;
     }
