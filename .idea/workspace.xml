@@ -4,6 +4,8 @@
     <list default="true" id="8d7273c8-3395-4705-9f90-01efd4134993" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/images/timg4.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mypro.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mypro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/snow.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/snow.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,17 +23,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="374" column="9" lean-forward="true" selection-start-line="374" selection-start-column="9" selection-end-line="374" selection-end-column="9" />
+            <state relative-caret-position="-1021">
+              <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hover.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/hover.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -65,9 +75,10 @@
         <option value="$PROJECT_DIR$/js/canvasStar.js" />
         <option value="$PROJECT_DIR$/js/canvasstar.js" />
         <option value="$PROJECT_DIR$/js/hover.js" />
-        <option value="$PROJECT_DIR$/js/mypro.js" />
         <option value="$PROJECT_DIR$/css/cv.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/snow.js" />
+        <option value="$PROJECT_DIR$/js/mypro.js" />
       </list>
     </option>
   </component>
@@ -78,8 +89,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="210" />
-    <option name="y" value="35" />
+    <option name="x" value="196" />
+    <option name="y" value="44" />
     <option name="width" value="1318" />
     <option name="height" value="787" />
   </component>
@@ -117,7 +128,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,16 +192,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289275000" />
+    <option name="totallyTimeSpent" value="293767000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="35" width="1318" height="787" extended-state="0" />
+    <frame x="182" y="92" width="1318" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49015316" visible="true" weight="0.209375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3280318" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3280318" />
       <window_info id="Structure" order="1" sideWeight="0.5098468" side_tool="true" weight="0.14688428" />
@@ -212,7 +224,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3280318" />
       <window_info id="Favorites" order="2" sideWeight="0.5040486" side_tool="true" weight="0.15160796" />
     </layout>
@@ -249,33 +260,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="125" column="60" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
-          <folding>
-            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mypro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4833">
-          <caret line="179" column="12" lean-forward="true" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/hover.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/cv.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21627">
@@ -290,7 +274,6 @@
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
@@ -535,20 +518,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.fullPage.css" />
     <entry file="file://$PROJECT_DIR$/js/jquery.fullPage.js" />
-    <entry file="file://$PROJECT_DIR$/js/hover.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mypro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/cv.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -559,16 +528,56 @@
     <entry file="file://$PROJECT_DIR$/images/timg4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/others/h5-mobiel/js/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2835">
+          <folding>
+            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="374" column="9" lean-forward="true" selection-start-line="374" selection-start-column="9" selection-end-line="374" selection-end-column="9" />
+        <state relative-caret-position="-1021">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#6;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#7;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/others/h5-mobiel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <element signature="n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/snow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret column="3685" lean-forward="true" selection-start-column="3685" selection-end-column="3685" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mypro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret column="516" lean-forward="true" selection-start-column="516" selection-end-column="516" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/hover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
