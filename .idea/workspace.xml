@@ -28,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="364" column="12" lean-forward="true" selection-start-line="364" selection-start-column="12" selection-end-line="364" selection-end-column="12" />
+            <state relative-caret-position="-211">
+              <caret line="359" column="9" lean-forward="true" selection-start-line="359" selection-start-column="9" selection-end-line="359" selection-end-column="9" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="e#14804#15235#0" />
@@ -99,8 +99,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="325" />
-    <option name="y" value="38" />
+    <option name="x" value="127" />
+    <option name="y" value="51" />
     <option name="width" value="1318" />
     <option name="height" value="787" />
   </component>
@@ -207,10 +207,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297262000" />
+    <option name="totallyTimeSpent" value="297515000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="413" y="59" width="1318" height="787" extended-state="0" />
+    <frame x="127" y="51" width="1318" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49015316" visible="true" weight="0.209375" />
@@ -585,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="364" column="12" lean-forward="true" selection-start-line="364" selection-start-column="12" selection-end-line="364" selection-end-column="12" />
+        <state relative-caret-position="-211">
+          <caret line="359" column="9" lean-forward="true" selection-start-line="359" selection-start-column="9" selection-end-line="359" selection-end-column="9" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
             <element signature="e#14804#15235#0" />
