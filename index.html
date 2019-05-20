@@ -203,7 +203,7 @@
             <div class="col-md-3 col-xs-6 ">
                 <a href="others/mall/index.html" target="_blank">
                     <div class="img-box">
-                        <img src="images/timg4.jpg" alt="imgbox">
+                        <img src="images/timg5.jpg" alt="imgbox">
                         <div class="describe">商城类页面</div>
                     </div>
                 </a>
@@ -363,7 +363,9 @@
         s.parentNode.insertBefore(bp, s);
     })();
     //监听加载状态改变
-    document.onreadystatechange = completeLoading;
+    window.onload = function() {
+        completeLoading()
+    };
     //加载状态为complete时移除loading效果
     function completeLoading() {
         if (document.readyState == "complete") {
