@@ -359,10 +359,9 @@
         s.parentNode.insertBefore(bp, s);
     })();
     //监听加载状态改变
-
-    setTimeout(function () {
+    window.onload = function() {
         completeLoading()
-    },2000);
+    };
     //加载状态为complete时移除loading效果
     function completeLoading() {
         if (document.readyState == "complete") {
