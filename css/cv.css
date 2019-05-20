@@ -1,4 +1,8 @@
-* {
+@import "../bootstrap-3.3.7-dist/css/bootstrap.min.css";
+@import "reset.css";
+@import "animate.css";
+@import "style.css";
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;

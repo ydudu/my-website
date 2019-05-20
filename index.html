@@ -10,11 +10,7 @@
     <meta name="description" content="Theshine前端工程师简历">
     <meta name="author" content="Theshine">
     <title>Web前端工程师简历</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/cv.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!--baidu tongji-->
     <script>
         var _hmt = _hmt || [];
@@ -235,7 +231,7 @@
             <div class="col-md-3 col-xs-6">
                 <a href="https://ydudu.github.io/planegames/index.html" target="_blank">
                     <div class="img-box">
-                        <img src="images/imgbox2.jpg" alt="">
+                        <img src="images/imgbox7.jpg" alt="">
                         <div class="describe">小游戏</div>
                     </div>
                 </a>
@@ -363,9 +359,10 @@
         s.parentNode.insertBefore(bp, s);
     })();
     //监听加载状态改变
-    window.onload = function() {
+
+    setTimeout(function () {
         completeLoading()
-    };
+    },2000);
     //加载状态为complete时移除loading效果
     function completeLoading() {
         if (document.readyState == "complete") {
@@ -374,9 +371,8 @@
             }, 500).hide(1000);
         }
     }
-</script>
-<script>
     $(document).ready(function() {
+        completeLoading();
         $("canvas.snow").let_it_snow();
         // WAIT FOR EVERYTHING TO LOAD
         $(window).on('load',function () {
