@@ -178,30 +178,19 @@ canvas {
     min-height: 700px;
 }
 .cover1 .cover1-bg {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
-.cover1 .cover1-bg ul li {
+.cover1 .cover1-bg img{
     position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
+    left: 0;
     display: none;
     animation: port 5s forwards;
-}
-.cover1 .cover1-bg ul li:before {
-    content: ' ';
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
 }
 @keyframes port {
     0% {
@@ -213,19 +202,6 @@ canvas {
     100% {
         transform: scale(1);
     }
-}
-.cover1 .cover1-bg ul .bg1 {
-    background-image: url(../images/timg8.jpg);
-    display: block;
-}
-.cover1 .cover1-bg ul .bg2 {
-    background-image: url(../images/timg9.jpg);
-}
-.cover1 .cover1-bg ul .bg3 {
-    background-image: url(../images/timg7.jpg);
-}
-.cover1 .cover1-bg ul .bg4 {
-    background-image: url(../images/timg5.jpg);
 }
 .cover1 .intro {
     position: absolute;
