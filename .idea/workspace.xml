@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d7273c8-3395-4705-9f90-01efd4134993" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-3.3.7-dist/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/cv.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/head.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/head.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/imgbox3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/imgbox6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/imgbox7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/timg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/timg4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/timg7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/timg7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/timg8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/timg8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/timg9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/timg9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="8d7273c8-3395-4705-9f90-01efd4134993" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -122,8 +94,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="117" />
-    <option name="y" value="61" />
+    <option name="x" value="186" />
+    <option name="y" value="39" />
     <option name="width" value="1293" />
     <option name="height" value="723" />
   </component>
@@ -223,12 +195,12 @@
       <workItem from="1558259234817" duration="2176000" />
       <workItem from="1558500421553" duration="4438000" />
       <workItem from="1558937743811" duration="4597000" />
-      <workItem from="1558958008451" duration="10572000" />
+      <workItem from="1558958008451" duration="10898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318731000" />
+    <option name="totallyTimeSpent" value="319057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="117" y="61" width="1293" height="723" extended-state="0" />
