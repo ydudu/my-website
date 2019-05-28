@@ -149,14 +149,3 @@ $(function() {
         }, 5E3)
     })()
 });
-document.onreadystatechange = function() {
-    completeLoading()
-};
-//加载状态为complete时移除loading效果
-function completeLoading() {
-    if (document.readyState == "complete") {
-        $(".spinner").animate({
-            "opacity": "0"
-        }, 500).hide(1000);
-    }
-};
