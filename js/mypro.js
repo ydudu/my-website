@@ -149,7 +149,7 @@ $(function() {
         }, 5E3)
     })()
 });
-window.onload = function() {
+document.onreadystatechange = function() {
     completeLoading()
 };
 //加载状态为complete时移除loading效果
