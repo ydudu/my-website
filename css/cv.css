@@ -1,7 +1,4 @@
-@import "bootstrap.min.css";
-@import "reset.css";
-@import "animate.css";
-@import "style.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +14,7 @@ body {
     width: 150px;
     height: 50px;
     background: rgba(111, 110, 110, 0.5);
-    position: fixed;
+    position: absolute;
     z-index: 1040;
     left: 20px;
     top: 10px;
@@ -43,57 +40,36 @@ body {
     overflow: hidden;
 }
 
-#music{
-    background: url(../images/music-bg.jpg) no-repeat;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    z-index: 1040;
-    top: 50%;
-    margin-top: 80px;
-    right: 7px;
-    position: fixed;
-    transition: all .5s;
-    animation: musicrun 5s infinite linear;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-@keyframes musicrun {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-}
-
 .right-nav {
     position: fixed;
     top: 30%;
     right: 5px;
     z-index: 1000;
 }
-
+.right-nav ul{
+    display: flex;
+    flex-direction: column;
+}
 .dashed {
-    margin-top: -170px;
-    margin-left: 22px;
-    height: 180px;
+    position: fixed;
+    top: 33%;
+    right: 27px;
+    height: 220px;
     width: 1px;
+    z-index: 999;
     display: block;
     border-right: 1px dashed #9dd0df;
 }
 
-.right-nav li {
+.right-nav ul li {
     margin: 15px;
     border-radius: 50%;
 }
-
 .right-nav li a {
     display: block;
     width: 16px;
     height: 16px;
-    background: rgba(66, 166, 223, 1);
+    background: rgb(9, 145, 224);
     border: 4px solid rgb(86, 70, 100);
     border-radius: 50%;
     cursor: pointer;
@@ -102,7 +78,7 @@ body {
     background: rgb(255, 255, 255);
 }
 .sploosh {
-    background: rgba(66, 166, 223, 1);
+    background: rgb(13, 153, 235);
     animation: sploosh 1.25s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -webkit-animation: sploosh 1.25s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -ms-animation: sploosh 1.25s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
@@ -208,7 +184,7 @@ canvas {
     width: 100%;
     text-align: center;
     opacity: 1;
-    top: 150px;
+    top: 25%;
     transition: all 1s;
 }
 .cover1 .intro .two-text {
@@ -216,9 +192,9 @@ canvas {
     margin: 0 auto;
     padding: 20px 0 20px 0;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(251, 252, 249, 0.1);
     transition: all .5s;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.7);
 }
 /*.cover1:hover .two-text {
     box-shadow: 0 0 60px rgba(22, 25, 255, 0.7);
@@ -827,11 +803,6 @@ canvas {
     #comments {
         display: none;
     }
-    #music {
-        margin-top: 0;
-        top: 5px;
-        left: 10px;
-    }
     .cover1 .intro {
         top: 200px;
     }
@@ -852,9 +823,6 @@ canvas {
     }
     .cover1 .intro .two-text .name {
         font-size: 16px;
-    }
-    .navbar-default .navbar-header .navbar-brand {
-        margin-left: 50px;
     }
     .img-circle {
         width: 135px;

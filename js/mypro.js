@@ -57,27 +57,15 @@ $(function() {
         r = f.index();
     f.eq(r).addClass("sploosh").siblings().removeClass("sploosh");
     $(window).scroll(function() {
-        var b = $(window).scrollTop(),
-            k = $(".github-link");
-        b > d && b < c ? (f.eq(0).addClass("sploosh").siblings().removeClass("sploosh"), k.css({
-            left: "20px",
-            top: "10px"
-        })) : b > c && b < a ? (f.eq(1).addClass("sploosh").siblings().removeClass("sploosh"), k.css({
-            left: "250px",
-            top: "1px"
-        }), l.addClass("active")) : b > a && b < e ? (f.eq(2).addClass("sploosh").siblings().removeClass("sploosh"), k.css({
-            left: "250px",
-            top: "1px"
-        }), m.addClass("active")) : b > e && b < g ? (f.eq(3).addClass("sploosh").siblings().removeClass("sploosh"), k.css({
-            left: "250px",
-            top: "1px"
-        }), n.addClass("active")) : b > g && b < h ? (f.eq(4).addClass("sploosh").siblings().removeClass("sploosh"), k.css({
-            left: "250px",
-            top: "1px"
-        }), p.addClass("active")) : b > h && (f.eq(5).addClass("sploosh").siblings().removeClass("sploosh"), k.css({
-            left: "250px",
-            top: "1px"
-        }), q.addClass("active"));
+        var b = $(window).scrollTop()
+            
+        b > d && b < c ? (f.eq(0).addClass("sploosh").siblings().removeClass("sploosh")) 
+        : b > c && b < a ? (f.eq(1).addClass("sploosh").siblings().removeClass("sploosh"),
+         l.addClass("active")) : b > a && b < e ? (f.eq(2).addClass("sploosh").siblings().removeClass("sploosh"),
+          m.addClass("active")) : b > e && b < g ? (f.eq(3).addClass("sploosh").siblings().removeClass("sploosh"),
+           n.addClass("active")) : b > g && b < h ? (f.eq(4).addClass("sploosh").siblings().removeClass("sploosh"),
+            p.addClass("active")) : b > h && (f.eq(5).addClass("sploosh").siblings().removeClass("sploosh"), 
+            q.addClass("active"));
         b > h ? $("#comments").fadeOut() : $("#comments").fadeIn()
     })
 });
