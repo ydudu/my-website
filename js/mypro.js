@@ -135,5 +135,6 @@ $(function() {
             1 <= a ? a = 0 : a++;
             c.eq(a).fadeIn().siblings().fadeOut()
         }, 5E3)
+        d=null
     })()
 });
